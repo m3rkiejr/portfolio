@@ -1,0 +1,13 @@
+
+
+
+.styled-text {
+    color: #004910;
+    font-family: Trebuchet MS;
+}
+
+.pic-border {
+    align: center;
+    border: solid;
+    border-color: #004910;
+}
