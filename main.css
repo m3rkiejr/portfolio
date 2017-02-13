@@ -1,4 +1,22 @@
 
+.green-background {
+    background: url('http://www.exroofingexperts.com/gaf/grand-canyon-moss-green-large.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
+
+.red-background {
+  
+    background: url('https://images.unsplash.com/photo-1482872376051-5ce74ebf0908?dpr=1&auto=format&fit=crop&w=1080&h=660&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}
 
 
 .styled-text {
