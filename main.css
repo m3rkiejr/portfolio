@@ -12,9 +12,11 @@
 
 body {
     background-color: rgba(0, 10, 10, .2);
+    padding-top: 60px;
+
 
 }
-.green-background {
+.blue-background {
     /*background: url('https://i.ytimg.com/vi/oeFAKFJQzek/maxresdefault.jpg') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -26,7 +28,6 @@ body {
 
 .red-background {
   
-    /*background: url('http://www.blended-html.com/background-images/bi-background-redish.png') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,6 +35,28 @@ body {
     background: linear-gradient(to left, rgba(255, 0, 0, .4) , rgba(150, 0, 0, .2));
 
 }
+.green-background {
+  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: linear-gradient(to right, rgba(0, 150, 0, .4) , rgba(0, 255, 0, .2));
+
+}
+
+.yellow-background {
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: linear-gradient(to left, rgba(255, 255, 0, .1) , rgba(245, 245, 0, .2));
+
+
+
+}
+
 
 
 .styled-text {
@@ -49,14 +72,14 @@ body {
 
 .aboutme-style {
     padding-bottom: 150px;
-    padding-top: 10px;
+    padding-top: 60px;
     padding-right: 75px;
     padding-left: 75px;
 }
 
 .portfolio-style {
     padding-bottom: 150px;
-    padding-top: 10px;
+    padding-top: 60px;
     padding-right: 75px;
     padding-left: 75px;
 
@@ -65,7 +88,7 @@ body {
 
 .contactme-style {
     padding-bottom: 150px;
-    padding-top: 10px;
+    padding-top: 60px;
     padding-right: 75px;
     padding-left: 75px;
 }
