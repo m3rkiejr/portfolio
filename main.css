@@ -1,12 +1,27 @@
 
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: rgba(0, 10, 10, .2);
+
+}
 .green-background {
-    background: url('https://i.ytimg.com/vi/oeFAKFJQzek/maxresdefault.jpg') no-repeat center center fixed;
+    /*background: url('https://i.ytimg.com/vi/oeFAKFJQzek/maxresdefault.jpg') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
-    height:100%;
+    background-size: cover;
     padding-top: 20px;
+    background: linear-gradient(to right, rgba(0, 0, 255, .3) , rgba(0, 0, 150, .1));
 }
 
 .red-background {
@@ -14,10 +29,9 @@
     /*background: url('http://www.blended-html.com/background-images/bi-background-redish.png') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
-    height:100%;
-    background: linear-gradient(to left, rgba(255, 0, 0, .6) , rgba(150, 0, 0, .2));
+    background-size: cover;
+    background: linear-gradient(to left, rgba(255, 0, 0, .4) , rgba(150, 0, 0, .2));
 
 }
 
@@ -38,7 +52,38 @@
     padding-top: 10px;
     padding-right: 75px;
     padding-left: 75px;
+}
 
-
+.portfolio-style {
+    padding-bottom: 150px;
+    padding-top: 10px;
+    padding-right: 75px;
+    padding-left: 75px;
 
 }
+
+
+.contactme-style {
+    padding-bottom: 150px;
+    padding-top: 10px;
+    padding-right: 75px;
+    padding-left: 75px;
+}
+
+
+.aboutme-style-active {
+    text-shadow: 1px 1px 1px red;
+
+}
+
+.portfolio-style-active {
+    text-shadow: 1px 1px 1px red;
+
+}
+
+.portfolio-style-active {
+    text-shadow: 1px 1px 1px red;
+
+}
+
+
