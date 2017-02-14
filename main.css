@@ -1,21 +1,24 @@
 
 .green-background {
-    background: url('http://www.exroofingexperts.com/gaf/grand-canyon-moss-green-large.jpg') no-repeat center center fixed;
+    background: url('https://i.ytimg.com/vi/oeFAKFJQzek/maxresdefault.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     height:100%;
+    padding-top: 20px;
 }
 
 .red-background {
   
-    background: url('https://images.unsplash.com/photo-1482872376051-5ce74ebf0908?dpr=1&auto=format&fit=crop&w=1080&h=660&q=80&cs=tinysrgb&crop=') no-repeat center center fixed;
+    /*background: url('http://www.blended-html.com/background-images/bi-background-redish.png') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     height:100%;
+    background: linear-gradient(to left, rgba(255, 0, 0, .6) , rgba(150, 0, 0, .2));
+
 }
 
 
@@ -28,4 +31,14 @@
     align: center;
     border: solid;
     border-color: #004910;
+}
+
+.aboutme-style {
+    padding-bottom: 150px;
+    padding-top: 10px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+
+
 }
