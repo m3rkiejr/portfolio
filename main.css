@@ -59,11 +59,12 @@ body {
 }
 
 .padded {
-    padding-top: 15%;
+  padding-top: 20%;
+
 }
 
 .aboutme-style {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     padding-top: 60px;
     padding-right: 75px;
     padding-left: 75px;
@@ -102,3 +103,18 @@ body {
 }
 
 
+/* heading animations */
+
+.rightBracket {
+            animation: moveBracket 1100ms;
+            animation-fill-mode: forwards; 
+}
+
+@keyframes moveBracket {
+       
+    100% {
+        transform: translate(-765px, 15px);
+        font-size: 30pt;
+    }
+}
+        
