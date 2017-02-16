@@ -43,8 +43,6 @@ body {
     background-size: cover;
     background: linear-gradient(to left, rgba(255, 255, 0, .1) , rgba(245, 245, 0, .2));
 
-
-
 }
 
 
@@ -58,6 +56,10 @@ body {
     align: center;
     border: solid;
     border-color: #004910;
+}
+
+.padded {
+    padding-top: 15%;
 }
 
 .aboutme-style {
