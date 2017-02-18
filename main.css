@@ -29,6 +29,25 @@ body {
     padding-left: 75px;
 
 }
+
+/* changes headings for smaller screen sizes */
+@media (max-width: 650px) {
+    .large-svg {
+        display: none;
+
+    }
+}
+
+@media (min-width: 650px) {
+         
+    .small-svg {
+        display: none;
+
+    }
+
+}
+/* end heading changers */
+
 .green-background {
   
     -webkit-background-size: cover;
@@ -107,7 +126,7 @@ body {
 /* heading animations */
 
 .rightBracket {
-            animation: moveBracket 1100ms;
+            animation: moveBracket 1400ms;
             animation-fill-mode: forwards; 
 }
 
