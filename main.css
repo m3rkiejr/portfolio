@@ -30,23 +30,6 @@ body {
 
 }
 
-/* changes headings for smaller screen sizes */
-@media (max-width: 650px) {
-    .large-svg {
-        display: none;
-
-    }
-}
-
-@media (min-width: 650px) {
-         
-    .small-svg {
-        display: none;
-
-    }
-
-}
-/* end heading changers */
 
 .green-background {
   
@@ -108,18 +91,14 @@ body {
 .aboutme-style-active {
     text-shadow: 1px 1px 1px red;
     padding-top: 60px;
-    
-
 }
 
 .portfolio-style-active {
     text-shadow: 1px 1px 1px red;
-
 }
 
 .portfolio-style-active {
     text-shadow: 1px 1px 1px red;
-
 }
 
 
@@ -137,4 +116,23 @@ body {
         font-size: 30pt;
     }
 }
-        
+/* end animations */
+
+/* changes headings for smaller screen sizes */
+@media (max-width: 650px) {
+    .large-svg {
+        display: none;
+
+    }
+}
+
+@media (min-width: 650px) {
+         
+    .small-svg {
+        display: none;
+
+    }
+
+}
+/* end heading changers */
+     
