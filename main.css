@@ -7,7 +7,6 @@ body {
 
 }
 .blue-background {
-    /*background: url('https://i.ytimg.com/vi/oeFAKFJQzek/maxresdefault.jpg') no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -30,25 +29,46 @@ body {
 
 }
 
+.about-style-active {
+    text-shadow: 1px 1px 1px red;
+    padding-top: 60px;
+}
 
-.green-background {
+
+.portfolio-style {
   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background: linear-gradient(to right, rgba(0, 150, 0, .4) , rgba(0, 255, 0, .2));
+    padding-bottom: 150px;
+    padding-top: 60px;
+    padding-right: 75px;
+    padding-left: 75px;
 
 }
 
-.yellow-background {
+
+.portfolio-style-active {
+    text-shadow: 1px 1px 1px red;
+}
+
+.contact-style {
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background: linear-gradient(to left, rgba(255, 255, 0, .1) , rgba(245, 245, 0, .2));
+    padding-bottom: 150px;
+    padding-top: 60px;
+    padding-right: 75px;
+    padding-left: 75px;
+}
 
+.contact-style-active {
+    text-shadow: 1px 1px 1px red;
 }
 
 
@@ -67,39 +87,6 @@ body {
 .padded {
   padding-top: 20%;
 
-}
-
-
-
-.portfolio-style {
-    padding-bottom: 150px;
-    padding-top: 60px;
-    padding-right: 75px;
-    padding-left: 75px;
-
-}
-
-
-.contactme-style {
-    padding-bottom: 150px;
-    padding-top: 60px;
-    padding-right: 75px;
-    padding-left: 75px;
-}
-
-
-.aboutme-style-active {
-    text-shadow: 1px 1px 1px red;
-    padding-top: 60px;
-}
-
-.portfolio-style-active {
-    text-shadow: 1px 1px 1px red;
-}
-
-.portfolio-style-active {
-    text-shadow: 1px 1px 1px red;
-}
 
 
 /* heading animations */
