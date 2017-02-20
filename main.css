@@ -1,11 +1,26 @@
 
 
 body {
-    background-color: rgba(0, 10, 10, .2);
+    background-color: rgba(255, 10, 10, .1);
     padding-top: 60px;
 
 
 }
+
+.navbar {
+    background-color: rgba(0, 0, 0, .5);
+    padding-left: 1%;
+    padding-right: 2%;
+    font-size: 24px;
+    text-shadow: 1px 1px 1px rgba(255, 0, 0, .6);
+}
+
+.navbar p {
+    font-size: 24px !important;
+
+
+}
+
 .blue-background {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -111,11 +126,25 @@ body {
         display: none;
 
     }
+    .navbar p .navbar-nav {
+        display: none;
+
+    }
 }
 
 @media (min-width: 650px) {
          
     .small-svg {
+        display: none;
+
+    }
+
+}
+
+/* to display social media links in nav-bar, under 890 px it will not display them */
+@media (max-width: 890px) {
+         
+    .contact-nav {
         display: none;
 
     }
