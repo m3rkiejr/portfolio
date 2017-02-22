@@ -193,7 +193,10 @@ hr {
     }
 
 }
+/* end heading changers */
 
+
+/* padding adjustment for small screens */
 @media (max-width: 767px) {
     
     .padded { 
@@ -203,5 +206,5 @@ hr {
 
 
 
-/* end heading changers */
+
      

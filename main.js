@@ -9,7 +9,7 @@
         var heightPic = document.getElementById("pictureContainer");
         var height2 = heightPic.offsetHeight; //gets height of picture
         
-        var adjustedPadding = (height * .5) - (height2 * .5); //eq for centering 
+        var adjustedPadding = (height/2) - (height2/2); //eq for centering 
 
         document.getElementById("pictureContainer").style.paddingTop = adjustedPadding + "px";
   }
@@ -22,6 +22,24 @@ $('document').ready( function () {
     
     adjustPicturePadding();
     window.onresize = adjustPicturePadding;
+/* code from https://css-tricks.com/snippets/jquery/smooth-scrolling/ keeping it here till i can figure out how the hell it works
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+*/
+
 
 });
 
