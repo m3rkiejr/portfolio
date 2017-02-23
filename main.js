@@ -12,9 +12,15 @@ $('document').ready( function () {
     var target1 = document.getElementById("pictureContainer");
     var target2 = document.getElementById("textContainer"); 
     adjustPicturePadding(target1, target2); //initial centering
-    function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } //argumentless function to pass in to window.add... resizer
+    function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } // function pointer to pass in to window.add... resizer
     window.addEventListener('resize', adjustPicturePaddingClone);
   // end picture centering
+
+$(".navbarId").click(function(){  // smooth scrolling function (adapted from other code)
+    var target1= $(this.hash + '1');
+    $('html, body').animate({scrollTop: target1.offset().top}, 700);
+
+});
 
 $(".navbarOption").click(function(){  //fixes flicker problem with bootstrap navbar when trying to collapse navbar after click
         if ($(document).width() > 767) {
@@ -23,26 +29,6 @@ $(".navbarOption").click(function(){  //fixes flicker problem with bootstrap nav
             $(".navbarOption a").attr("data-toggle","collapse");
         };
 });
-
-
-
-/*
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});*/
-
-
 
 
 });
