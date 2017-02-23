@@ -8,12 +8,23 @@
 
 $('document').ready( function () {
   
+  // picture centering 
     var target1 = document.getElementById("pictureContainer");
     var target2 = document.getElementById("textContainer"); 
-   
-    adjustPicturePadding(target1, target2);
-    function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } //resize event listener wont take arguments
+    adjustPicturePadding(target1, target2); //initial centering
+    function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } //argumentless function to pass in to window.add... resizer
     window.addEventListener('resize', adjustPicturePaddingClone);
+  // end picture centering
+
+$(".navbarOption").click(function(){  //fixes flicker problem with bootstrap navbar when trying to collapse navbar after click
+        if ($(document).width() > 767) {
+            $(".navbarOption a").attr("data-toggle","");
+        } else {
+            $(".navbarOption a").attr("data-toggle","collapse");
+        };
+});
+
+
 
 /*
 $(function() {
