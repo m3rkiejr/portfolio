@@ -78,18 +78,21 @@ hr {
     padding-top: 60px;
 }
 
-/* portfolio section  */
+
+
 
 .folder1 {
+
     display: block;
     background: cadetblue;
     height: 650px;
     width: 100%;
     box-shadow: 8px 8px 5px #778878;
     border-radius: 10px;
-    /*border: 2px solid #73AD21;*/
+   /* border: 2px solid #73AD21;*/
     padding: 40px;
     position: relative; 
+    
 
 }
 
@@ -97,16 +100,19 @@ hr {
     display: block;
     background: cadetblue;
     height: 40px;
-    width: 33%;
-    
+    width: 245px;
     padding-top: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    
+    /*border-top: 10px solid green;*/
+    -webkit-box-pack: 20deg;
+    box-shadow: 8px 8px 5px #778878;
+    /*box-shadow: inset -1px 5px 3px -3px rgba(50, 50, 50, 0.75);*/
     position: relative; 
     bottom: 92px;
     right: 40px;
-
+   
+    
 
 }
 
@@ -128,7 +134,7 @@ hr {
     display: block;
     background: lightgoldenrodyellow;
     height: 40px;
-    width: 33%;
+    width: 245px;
     
     padding-top: 2px;
     border-top-right-radius: 10px;
@@ -158,7 +164,7 @@ hr {
     display: block;
     background: palevioletred;
     height: 40px;
-    width: 33%;
+    width: 245px;
     
     padding-top: 2px;
     border-top-right-radius: 10px;
