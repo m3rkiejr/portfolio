@@ -20,6 +20,7 @@ hr {
     background-size: cover;
     padding-top: 25px;
     background: linear-gradient(to right, rgba(0, 0, 150, .3) , rgba(0, 0, 50, .1));
+    
 }
 
 .styled-text {
@@ -29,7 +30,7 @@ hr {
 
 
 .padded {
-    
+ 
 
 
 }
@@ -78,6 +79,113 @@ hr {
 }
 
 /* portfolio section  */
+
+.folder1 {
+    display: block;
+    background: cadetblue;
+    height: 650px;
+    width: 100%;
+    box-shadow: 8px 8px 5px #778878;
+    border-radius: 10px;
+    /*border: 2px solid #73AD21;*/
+    padding: 40px;
+    position: relative; 
+
+}
+
+.folderTab1 {
+    display: block;
+    background: cadetblue;
+    height: 40px;
+    width: 33%;
+    
+    padding-top: 2px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    position: relative; 
+    bottom: 92px;
+    right: 40px;
+
+
+}
+
+.folder2 {
+    display: block;
+    background: lightgoldenrodyellow;
+    height: 650px;
+    width: 100%;
+    box-shadow: 8px 8px 5px #778878;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative; 
+    bottom: 650px;
+    
+
+}
+
+.folderTab2 {
+    display: block;
+    background: lightgoldenrodyellow;
+    height: 40px;
+    width: 33%;
+    
+    padding-top: 2px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    position: relative; 
+    bottom: 92px;
+    left: 240px;
+}
+
+.folder3 {
+    display: block;
+    background: palevioletred;
+    height: 650px;
+    width: 100%;
+    box-shadow: 8px 8px 5px #778878;
+    border-radius: 10px;
+    /*border: 2px solid #73AD21;*/
+    padding: 40px;
+    position: relative; 
+    bottom:1300px;
+    
+
+}
+
+.folderTab3 {
+    display: block;
+    background: palevioletred;
+    height: 40px;
+    width: 33%;
+    
+    padding-top: 2px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+    position: relative; 
+    bottom: 92px;
+    left: 520px;
+}
+
+.singleFolder {
+    display: block;
+    background: cadetblue;
+    height: 550px;
+    width: 100%;
+    box-shadow: 8px 8px 5px #778878;
+    border-radius: 10px;
+    padding: 5px;
+
+
+    
+
+}
+
+
+
+
 
 .portfolio-style {
   
@@ -163,6 +271,25 @@ hr {
     }
 
 }
+@media (max-width: 995px) {
+         
+         .folders {
+             display: none;
+
+         }
+
+}
+
+@media (min-width: 994px) {
+         
+         .singleFolder {
+             display: none;
+
+         }
+
+}
+
+
 
 /* to display social media links in nav-bar (spacing issue) under 890 px it will not display them */
 @media (max-width: 890px) {
@@ -201,6 +328,8 @@ hr {
     
     .padded { 
     padding-top: 10px !important;
+    border-radius: 10px;
+
     }
 
 
