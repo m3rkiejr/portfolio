@@ -78,7 +78,14 @@ hr {
     padding-top: 60px;
 }
 
+.folderContainer {
+    display: block;
+    height: 750px;
+    width: 100%;
+    position: relative;
 
+
+}
 
 
 .folder1 {
@@ -105,12 +112,10 @@ hr {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     /*border-top: 10px solid green;*/
-    -webkit-box-pack: 20deg;
     box-shadow: 8px 8px 5px #778878;
     /*box-shadow: inset -1px 5px 3px -3px rgba(50, 50, 50, 0.75);*/
     position: relative; 
-    bottom: 92px;
-    right: 40px;
+
    
     
 
@@ -125,8 +130,8 @@ hr {
     border-radius: 10px;
     padding: 40px;
     position: relative; 
-    bottom: 650px;
-    
+   
+
 
 }
 
@@ -139,10 +144,9 @@ hr {
     padding-top: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    
+    box-shadow: 8px 8px 5px #778878;
     position: relative; 
-    bottom: 92px;
-    left: 240px;
+ 
 }
 
 .folder3 {
@@ -155,7 +159,8 @@ hr {
     /*border: 2px solid #73AD21;*/
     padding: 40px;
     position: relative; 
-    bottom:1300px;
+
+    
     
 
 }
@@ -169,10 +174,9 @@ hr {
     padding-top: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    
+    box-shadow: 8px 8px 5px #778878;
     position: relative; 
-    bottom: 92px;
-    left: 520px;
+
 }
 
 .singleFolder {
@@ -187,6 +191,43 @@ hr {
 
     
 
+}
+/* z-index and position specifications */
+
+.folder1 {
+    z-index: 20;
+    top: 30px;
+}
+
+.folder2 {
+    bottom: 656px;
+    left: 5px;
+    z-index: 40;
+}
+
+.folder3 {
+    bottom: 1340px;
+    left: 10px;
+    z-index:60;
+}
+
+.folderTab1{
+    bottom: 652px;
+    z-index: 15;
+
+}
+
+.folderTab2 {
+    bottom: 1340px;
+    left: 33%;
+    z-index: 35;
+
+}
+
+.folderTab3 {
+    bottom: 2024px;
+    left: 66%;
+    z-index: 55;
 }
 
 
@@ -203,7 +244,7 @@ hr {
     padding-top: 60px;
     padding-right: 75px;
     padding-left: 75px;
-    padding-bottom: 400px; 
+    padding-bottom: 40px; 
 }
 
 .portfolio-style-active {
@@ -279,14 +320,14 @@ hr {
 }
 @media (max-width: 995px) {
          
-         .folders {
+         .folderContainer {
              display: none;
 
          }
 
 }
 
-@media (min-width: 994px) {
+@media (min-width: 996px) {
          
          .singleFolder {
              display: none;
