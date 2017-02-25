@@ -12,17 +12,21 @@ $('document').ready( function () {
     var target1 = document.getElementById("pictureContainer");
     var target2 = document.getElementById("textContainer"); 
     adjustPicturePadding(target1, target2); //initial centering
-    function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } // function pointer to pass in to window.add... resizer
-    window.addEventListener('resize', adjustPicturePaddingClone);
+    function adjustPicturePaddingPointer() { adjustPicturePadding(target1, target2); } // function reference pointer to pass in to window.add... resizer
+    window.addEventListener('resize', adjustPicturePaddingPointer);
   // end picture centering
 
-$(".navbarId").click(function(){  // smooth scrolling function (adapted from other code)
+
+// smooth scrolling function (adapted from other code)
+$(".navbarId").click(function(){  
     var target1= $(this.hash + '1');
     $('html, body').animate({scrollTop: target1.offset().top}, 700);
 
 });
 
-$(".navbarOption").click(function(){  //fixes flicker problem with bootstrap navbar when trying to collapse navbar after click
+
+//fixes flicker problem with bootstrap navbar when trying to collapse navbar after click
+$(".navbarOption").click(function(){  
         if ($(document).width() > 767) {
             $(".navbarOption a").attr("data-toggle","");
         } else {

@@ -143,7 +143,7 @@ hr {
 }
 /* end animations */
 
-/* changes headings for smaller screen sizes */
+/* changes headings and padding for larger or smaller screen sizes */
 @media (max-width: 650px) {
     .large-svg {
         display: none;
@@ -164,7 +164,7 @@ hr {
 
 }
 
-/* to display social media links in nav-bar, under 890 px it will not display them */
+/* to display social media links in nav-bar (spacing issue) under 890 px it will not display them */
 @media (max-width: 890px) {
          
     .contact-nav {
@@ -196,7 +196,7 @@ hr {
 /* end heading changers */
 
 
-/* padding adjustment for small screens */
+/* pciture padding adjustment for small screens */
 @media (max-width: 767px) {
     
     .padded { 
