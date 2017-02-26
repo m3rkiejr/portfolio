@@ -28,13 +28,6 @@ hr {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-.padded {
- 
-
-
-}
-
  /* navigation bar */
 
 .navbar {
@@ -78,6 +71,8 @@ hr {
     padding-top: 60px;
 }
 
+/* portfolio section */
+
 .folderContainer {
     display: block;
     height: 750px;
@@ -87,97 +82,26 @@ hr {
 
 }
 
-/* portfolio section */
-
-.folder1 {
-
+.folderTab1, .folderTab2, .folderTab3 {
     display: block;
-    background: cadetblue;
-    height: 650px;
-    width: 100%;
-    box-shadow: 8px 8px 5px #778878;
-    border-radius: 10px;
-   /* border: 2px solid #73AD21;*/
-    padding: 40px;
-    position: relative; 
-    
-
-}
-
-.folderTab1 {
-    display: block;
-    background: cadetblue;
     height: 40px;
     width: 245px;
     padding-top: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    /*border-top: 10px solid green;*/
     box-shadow: 8px 8px 5px #778878;
-    /*box-shadow: inset -1px 5px 3px -3px rgba(50, 50, 50, 0.75);*/
     position: relative; 
-
-   
-    
-
 }
 
-.folder2 {
+
+.folder1, .folder2, .folder3 {
     display: block;
-    background: lightgoldenrodyellow;
     height: 650px;
     width: 100%;
     box-shadow: 8px 8px 5px #778878;
     border-radius: 10px;
     padding: 40px;
     position: relative; 
-   
-
-
-}
-
-.folderTab2 {
-    display: block;
-    background: lightgoldenrodyellow;
-    height: 40px;
-    width: 245px;
-    
-    padding-top: 2px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    box-shadow: 8px 8px 5px #778878;
-    position: relative; 
- 
-}
-
-.folder3 {
-    display: block;
-    background: palevioletred;
-    height: 650px;
-    width: 100%;
-    box-shadow: 8px 8px 5px #778878;
-    border-radius: 10px;
-    /*border: 2px solid #73AD21;*/
-    padding: 40px;
-    position: relative; 
-
-    
-    
-
-}
-
-.folderTab3 {
-    display: block;
-    background: palevioletred;
-    height: 40px;
-    width: 245px;
-    
-    padding-top: 2px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    box-shadow: 8px 8px 5px #778878;
-    position: relative; 
-
 }
 
 .singleFolder {
@@ -188,37 +112,39 @@ hr {
     box-shadow: 8px 8px 5px #778878;
     border-radius: 10px;
     padding: 5px;
-
-
-    
-
 }
+
 /* z-index and position specifications */
 
 .folder1 {
+    background: cadetblue;
     z-index: 70;
     top: 30px;
 }
 
 .folder2 {
+    background: lightgoldenrodyellow;
     bottom: 656px;
     left: 5px;
     z-index: 40;
 }
 
 .folder3 {
+    background: palevioletred;
     bottom: 1340px;
     left: 10px;
     z-index:60;
 }
 
 .folderTab1{
+    background: cadetblue;
     bottom: 652px;
     z-index: 65;
 
 }
 
 .folderTab2 {
+    background: lightgoldenrodyellow;
     bottom: 1340px;
     left: 33%;
     z-index: 35;
@@ -226,12 +152,11 @@ hr {
 }
 
 .folderTab3 {
+    background: palevioletred;
     bottom: 2024px;
     left: 66%;
     z-index: 55;
 }
-
-
 
 
 
