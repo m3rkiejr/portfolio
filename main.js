@@ -12,8 +12,8 @@ $('document').ready( function () {
     var target1 = document.getElementById("pictureContainer");
     var target2 = document.getElementById("textContainer"); 
     adjustPicturePadding(target1, target2); //initial centering
-    function adjustPicturePaddingPointer() { adjustPicturePadding(target1, target2); } // function reference pointer to pass in to window.add... resizer
-    window.addEventListener('resize', adjustPicturePaddingPointer);
+    function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } // function reference clone to pass in to window.add... resizer
+    window.addEventListener('resize', adjustPicturePaddingClone);
   // end picture centering
 
 
