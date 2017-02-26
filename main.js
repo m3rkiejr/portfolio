@@ -6,6 +6,12 @@
   }
   // end centering function
 
+    function changeFolder (currentFolder, clickedFolder){
+
+
+  }
+
+
 $('document').ready( function () {
   
   // picture centering 

@@ -119,39 +119,38 @@ hr {
 .folder1 {
     background: cadetblue;
     z-index: 20;
-    top: 30px;
+    top: 38px;
 }
 
 .folderTab1{
     background: cadetblue;
-    bottom: 654px;
+    bottom: 650px;
+    height: 46px;
     z-index: 15;
 }
 
 .folder2 {
     background: lightgoldenrodyellow;
-    bottom: 656px;
-    left: 5px;
+    bottom: 658px;
     z-index: 40;
 }
 
 .folderTab2 {
     background: lightgoldenrodyellow;
-    bottom: 1340px;
+    bottom: 1346px;
     left: 33%;
     z-index: 35;
 }
 
 .folder3 {
     background: palevioletred;
-    bottom: 1342px;
-    left: 10px;
+    bottom: 1348px;
     z-index:60;
 }
 
 .folderTab3 {
     background: palevioletred;
-    bottom: 2026px;
+    bottom: 2036px;
     left: 66%;
     z-index: 55;
 }
