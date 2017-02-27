@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Dennis Merkle</title>
-    <meta http-equiv="refresh" content="20">
+    <!--<meta http-equiv="refresh" content="20">-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -193,16 +193,18 @@
            <div class="col-sm-12">
                <h2 class="styled-text">&lt;Portfolio /&gt;</h2>
                <hr>
-           
+              <!-- folders section -->
+                <div class="folderContainer"> 
 
-                    <div class="folderContainer">
+                    <!-- folder1 section -->
+
                         <div class="folder1" id="folder1Id" style="overflow:hidden">
                             <img class="img-responsive img-rounded"  src="./guion1.jpg">
                         </div>
                         <div class="folderTab1" id="folderBtn1" data-folder="folder1Id">
-                            
                         </div>
-                    
+
+                     <!-- folder2 section -->
 
                         <div class="folder2" id="folder2Id">
                                 carosel in here
@@ -210,70 +212,84 @@
                         <div class="folderTab2" id="folderBtn2" data-folder="folder2Id">
                         </div>
 
-                        <div class="folder3" id="folder3Id">
-              
-                           <div class="container carousel-style">
-                               
-                            <div class="carousel slide" id="carousel3" data-interval="3200" data-ride="carousel">
+                     <!-- folder3 section -->
 
+                        <div class="folder3" id="folder3Id">
+                           <div class="container carousel-style">
+                            <div class="carousel slide" id="carousel3" data-interval="3200" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel3" data-slide-to="0" class="active"></li>
                                     <li data-target="#carousel3" data-slide-to="1"></li>
                                     <li data-target="#carousel3" data-slide-to="2"></li>
                                     <li data-target="#carousel3" data-slide-to="3"></li>
                                 </ol>
-
                                 <div class="carousel-inner">
-
                                      <div class="item active">
                                         <img src="./guion1.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 1"  />
-                                        <div class="carousel-caption">
-                                             
-                                        </div>
                                     </div>
                                     <div class="item ">
                                         <img src="./guion2.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 2" />
-                                        <div class="carousel-caption">
-                                           
-                                        </div>
                                     </div>
                                     <div class="item">
                                         <img src="./guion3.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 3" />
-                                        <div class="carousel-caption">
-                                           
-                                        </div>
                                     </div>
                                     <div class="item">
                                         <img src="./guion4.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 4" />
-                                        <div class="carousel-caption">
-                                          
-                                        </div>
                                     </div>
-
-
                                 </div>
                                 <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                   
                                 </a>
                                 <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    
                                 </a>
                             </div>
-
-
-
-                            </div>
+                           </div>
                         </div>
                         <div class="folderTab3" id="folderBtn3" data-folder="folder3Id">
-                            <p style="text-align: center; margin-top: 7px"><strong>Guy Blueford Tribute Page</strong></p>
+                            <p style="text-align: center; margin-top: 7px">
+                                <strong>Guy Bluford Tribute Page<a href="http://codepen.io/magicm3rk/pen/vgWKLv"><img src="./arrowicon.gif" height="20px" width="auto" aria="visit website"/></a>
+                                </strong>
+                            </p>
                         </div>
+            
+                   <!-- end folder3 section -->
 
-                    </div>
+                </div> <!-- end folder container -->
 
 
                 <div class="singleFolder">
+                           <div class="container carousel-single-style">
+                            <div class="carousel slide" id="carouselSingle" data-interval="3200" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselSingle" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselSingle" data-slide-to="1"></li>
+                                    <li data-target="#carouselSingle" data-slide-to="2"></li>
+                                    <li data-target="#carouselSingle" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                     <div class="item active">
+                                        <img src="./guion1.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 1"  />
+                                    </div>
+                                    <div class="item ">
+                                        <img src="./guion2.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 2" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="./guion3.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 3" />
+                                    </div>
+                                    <div class="item">
+                                        <img src="./guion4.jpg" class="img-responsive img-rounded" alt="Guion Blueford Tribute Page 4" />
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carouselSingle" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carouselSingle" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                           </div>
+
                 </div>
 
 

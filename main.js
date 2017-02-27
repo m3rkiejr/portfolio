@@ -19,6 +19,8 @@ function changeFolder (clickedFolder, folder1, folder2, folder3){
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 70;
           folder3.style.zIndex = 20;
+          $('#carousel3').carousel('pause');
+          
         } else {
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 20;
