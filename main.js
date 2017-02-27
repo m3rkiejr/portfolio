@@ -11,6 +11,10 @@ function changeFolder (clickedFolder, folder1, folder2, folder3){
           folder1.style.zIndex = 70;
           folder2.style.zIndex = 30;
           folder3.style.zIndex = 20;
+          // adds carousel pausing for faster page... still have to add ids of carousel 1 and 2 to this section and next section
+
+           $('#carousel3').carousel('pause');
+
         } else if (clickedFolder.attr("data-folder") == "folder2Id") {
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 70;
@@ -19,7 +23,10 @@ function changeFolder (clickedFolder, folder1, folder2, folder3){
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 20;
           folder3.style.zIndex = 70;
+          $('#carousel3').carousel('cycle');
         };
+
+
 }
 
 
