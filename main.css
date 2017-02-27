@@ -102,6 +102,7 @@ hr {
     border-radius: 10px;
     padding: 40px;
     position: relative; 
+   
 }
 
 .singleFolder {
@@ -117,44 +118,51 @@ hr {
 /* z-index and position specifications */
 
 .folder1 {
-    background: cadetblue;
+    background: #69DCFF;
     z-index: 20;
     top: 38px;
 }
 
 .folderTab1{
-    background: cadetblue;
+    background: #69DCFF;
     bottom: 650px;
     height: 46px;
     z-index: 15;
 }
 
 .folder2 {
-    background: lightgoldenrodyellow;
+    background: #FFFBC9;
     bottom: 658px;
     z-index: 40;
 }
 
 .folderTab2 {
-    background: lightgoldenrodyellow;
+    background: #FFFBC9;
     bottom: 1346px;
     left: 33%;
     z-index: 35;
 }
 
 .folder3 {
-    background: palevioletred;
+    background: #B9A7FA;
     bottom: 1348px;
     z-index:60;
+
 }
 
 .folderTab3 {
-    background: palevioletred;
+    background: #B9A7FA;
     bottom: 2036px;
     left: 66%;
     z-index: 55;
 }
 
+.carousel2-style {
+
+    height: 640px;
+    width: 100%;
+
+}
 
 
 .portfolio-style {
@@ -259,7 +267,13 @@ hr {
 
 }
 
+@media (min-width: 1200px) {
 
+    .carousel-style {
+        width: 80%;
+    }
+
+}
 
 /* to display social media links in nav-bar (spacing issue) under 890 px it will not display them */
 @media (max-width: 890px) {

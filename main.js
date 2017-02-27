@@ -33,12 +33,15 @@ $('document').ready( function () {
       document.getElementById("folder2Id").style.zIndex = 70;
       document.getElementById("folder1Id").style.zIndex = 30;
       document.getElementById("folder3Id").style.zIndex = 20;
+
   });
 
   $('#folderBtn3').click(function() {
       document.getElementById("folder3Id").style.zIndex = 70;
       document.getElementById("folder2Id").style.zIndex = 30;
       document.getElementById("folder1Id").style.zIndex = 20;
+      document.getElementById("carousel3").style.display = "block";
+
   });
 
 
