@@ -6,44 +6,46 @@ function  adjustPicturePadding (target1, target2) {   //target 1 is colum  with 
 }
   // end centering function
 
-function changeFolder (currentFolder, clickedFolder){
-
-
+function changeFolder (clickedFolder, folder1, folder2, folder3){
+        if (clickedFolder.attr("data-folder") == "folder1Id") {
+          folder1.style.zIndex = 70;
+          folder2.style.zIndex = 30;
+          folder3.style.zIndex = 20;
+        } else if (clickedFolder.attr("data-folder") == "folder2Id") {
+          folder1.style.zIndex = 30;
+          folder2.style.zIndex = 70;
+          folder3.style.zIndex = 20;
+        } else {
+          folder1.style.zIndex = 30;
+          folder2.style.zIndex = 20;
+          folder3.style.zIndex = 70;
+        };
 }
 
 
 $('document').ready( function () {
-  
+
+    // Caching
+
+  //folder-tab selections
+    var folder1 = document.getElementById("folder1Id");
+    var folder2 = document.getElementById("folder2Id");
+    var folder3 = document.getElementById("folder3Id");
+    
   // picture centering 
     var target1 = document.getElementById("pictureContainer");
     var target2 = document.getElementById("textContainer"); 
+  
     adjustPicturePadding(target1, target2); //initial centering
     function adjustPicturePaddingClone() { adjustPicturePadding(target1, target2); } // function reference clone to pass in to window.add... resizer
     window.addEventListener('resize', adjustPicturePaddingClone);
   // end picture centering
 
-/* need to learn regex to make this less redundant , js for bringing folder to front in profile section */
-  $('#folderBtn1').click(function() {
-      document.getElementById("folder1Id").style.zIndex = 70;
-      document.getElementById("folder2Id").style.zIndex = 30;
-      document.getElementById("folder3Id").style.zIndex = 20;
+/* (learned!) profile section tab switching for carousel content */
+  $("[id^=folderBtn").click(function() {
+    var clickedFolder = $(this);
+    changeFolder(clickedFolder, folder1, folder2, folder3);
   });
-
-  $('#folderBtn2').click(function() {
-      document.getElementById("folder2Id").style.zIndex = 70;
-      document.getElementById("folder1Id").style.zIndex = 30;
-      document.getElementById("folder3Id").style.zIndex = 20;
-
-  });
-
-  $('#folderBtn3').click(function() {
-      document.getElementById("folder3Id").style.zIndex = 70;
-      document.getElementById("folder2Id").style.zIndex = 30;
-      document.getElementById("folder1Id").style.zIndex = 20;
-      document.getElementById("carousel3").style.display = "block";
-
-  });
-
 
 
 // smooth scrolling function (adapted from other code)
@@ -54,7 +56,7 @@ $(".navbarId").click(function(){
 });
 
 
-//fixes flicker problem with bootstrap navbar when trying to collapse navbar after click
+//fixes flicker problem with bootstrap navbar when trying to collapse navbar after click (large screen issue)
 $(".navbarOption").click(function(){  
         if ($(document).width() > 767) {
             $(".navbarOption a").attr("data-toggle","");
@@ -64,5 +66,5 @@ $(".navbarOption").click(function(){
 });
 
 
-});
+}); //end of document.ready
 
