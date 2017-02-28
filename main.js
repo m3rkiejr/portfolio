@@ -6,11 +6,15 @@ function  adjustPicturePadding (target1, target2) {   //target 1 is colum  with 
 }
   // end centering function
 
-function changeFolder (clickedFolder, folder1, folder2, folder3){
+function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, folderTab2, folderTab3){
         if (clickedFolder.attr("data-folder") == "folder1Id") {
           folder1.style.zIndex = 70;
           folder2.style.zIndex = 30;
           folder3.style.zIndex = 20;
+          folderTab1.style.zIndex= 65;
+          folderTab2.style.zIndex= 25;
+          folderTab2.style.zIndex= 15;
+          
           // adds carousel pausing for faster page... still have to add ids of carousel 1 and 2 to this section and next section
 
            $('#carousel3').carousel('pause');
@@ -20,7 +24,7 @@ function changeFolder (clickedFolder, folder1, folder2, folder3){
           folder2.style.zIndex = 70;
           folder3.style.zIndex = 20;
           $('#carousel3').carousel('pause');
-          
+
         } else {
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 20;
@@ -40,6 +44,11 @@ $('document').ready( function () {
     var folder1 = document.getElementById("folder1Id");
     var folder2 = document.getElementById("folder2Id");
     var folder3 = document.getElementById("folder3Id");
+    var folderTab1 = document.getElementById("folderBtn1");
+    var folderTab2 = document.getElementById("folderBtn2");
+    var folderTab3 = document.getElementById("folderBtn3");
+
+
     
   // picture centering 
     var target1 = document.getElementById("pictureContainer");
