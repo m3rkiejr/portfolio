@@ -91,7 +91,7 @@ hr {
     border-top-left-radius: 10px;
     box-shadow: 8px 8px 5px #778878;
     position: absolute; 
-   
+
 
 }
 
@@ -104,8 +104,8 @@ hr {
     border-radius: 10px;
     padding: 40px;
     position: absolute; 
-   
-   
+
+      
 }
 
 .singleFolder {
@@ -132,7 +132,7 @@ hr {
 .folderTab1{
     background: #69DCFF;
     height: 46px;
-    z-index: 15;
+    z-index: 10;
 }
 
 .folder2 {
@@ -144,7 +144,7 @@ hr {
 .folderTab2 {
     background: #FFFBC9;
     left: 33%;
-    z-index: 35;
+    z-index: 9;
 }
 
 .folder3 {
@@ -156,7 +156,7 @@ hr {
 .folderTab3 {
     background: #B9A7FA;
     left: 66%;
-    z-index: 55;
+    z-index: 8;
 
 }
 
@@ -238,6 +238,9 @@ hr {
         font-size: 30pt;
     }
 }
+
+/* folder animations */
+
 /* end animations */
 
 /* changes headings and padding for larger or smaller screen sizes */

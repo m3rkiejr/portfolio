@@ -8,13 +8,13 @@ function  adjustPicturePadding (target1, target2) {   //target 1 is colum  with 
 
 function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, folderTab2, folderTab3){
         if (clickedFolder.attr("data-folder") == "folder1Id") {
+
           folder1.style.zIndex = 70;
           folder2.style.zIndex = 30;
           folder3.style.zIndex = 20;
-          folderTab1.style.zIndex= 65;
-          folderTab2.style.zIndex= 25;
-          folderTab2.style.zIndex= 15;
+
           
+
           // adds carousel pausing for faster page... still have to add ids of carousel 1 and 2 to this section and next section
 
            $('#carousel3').carousel('pause');
@@ -31,6 +31,11 @@ function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, fol
           folder3.style.zIndex = 70;
           $('#carousel3').carousel('cycle');
         };
+       
+        $(("#" + clickedFolder.attr("data-folder"))).toggleClass("folder-animate");
+        
+
+
 
 
 }
@@ -62,7 +67,7 @@ $('document').ready( function () {
 /* (learned!) profile section tab switching for carousel content */
   $("[id^=folderBtn").click(function() {
     var clickedFolder = $(this);
-    changeFolder(clickedFolder, folder1, folder2, folder3);
+    changeFolder(clickedFolder, folder1, folder2, folder3, folderTab1, folderTab2, folderTab3);
   });
 
 
