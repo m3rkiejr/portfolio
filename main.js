@@ -13,31 +13,31 @@ function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, fol
           folder2.style.zIndex = 30;
           folder3.style.zIndex = 20;
 
-          
-
           // adds carousel pausing for faster page... still have to add ids of carousel 1 and 2 to this section and next section
 
+           $('#carousel2').carousel('pause');
            $('#carousel3').carousel('pause');
+           $('#carousel1').carousel('cycle');
+           
 
         } else if (clickedFolder.attr("data-folder") == "folder2Id") {
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 70;
           folder3.style.zIndex = 20;
+
+          $('#carousel1').carousel('pause');
           $('#carousel3').carousel('pause');
+          $('#carousel2').carousel('cycle');
 
         } else {
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 20;
           folder3.style.zIndex = 70;
-          $('#carousel3').carousel('cycle');
+            $('#carousel1').carousel('pause');
+            $('#carousel2').carousel('pause');
+            $('#carousel3').carousel('cycle');
         };
-       
-        $(("#" + clickedFolder.attr("data-folder"))).toggleClass("folder-animate");
-        
-
-
-
-
+        //$(("#" + clickedFolder.attr("data-folder"))).toggleClass("folder-animate");
 }
 
 
@@ -52,6 +52,16 @@ $('document').ready( function () {
     var folderTab1 = document.getElementById("folderBtn1");
     var folderTab2 = document.getElementById("folderBtn2");
     var folderTab3 = document.getElementById("folderBtn3");
+    var docWidth = $(document).width();
+
+//initialize carousels to be in paused state, except active carousel
+ $('#carousel1').carousel('pause'); 
+ $('#carousel2').carousel('pause');
+ if (docWidth > 996) {
+   $('#carouselSingle').carousel('pause')
+ } else {
+   $('carousel3').carousel('pause');
+ };
 
 
     
@@ -87,6 +97,9 @@ $(".navbarOption").click(function(){
             $(".navbarOption a").attr("data-toggle","collapse");
         };
 });
+
+
+
 
 
 }); //end of document.ready
