@@ -12,30 +12,28 @@ function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, fol
           folder1.style.zIndex = 70;
           folder2.style.zIndex = 30;
           folder3.style.zIndex = 20;
-
           // adds carousel pausing for faster page... still have to add ids of carousel 1 and 2 to this section and next section
-
            $('#carousel2').carousel('pause');
            $('#carousel3').carousel('pause');
            $('#carousel1').carousel('cycle');
-           
 
         } else if (clickedFolder.attr("data-folder") == "folder2Id") {
+
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 70;
           folder3.style.zIndex = 20;
-
           $('#carousel1').carousel('pause');
           $('#carousel3').carousel('pause');
           $('#carousel2').carousel('cycle');
 
         } else {
+
           folder1.style.zIndex = 30;
           folder2.style.zIndex = 20;
           folder3.style.zIndex = 70;
-            $('#carousel1').carousel('pause');
-            $('#carousel2').carousel('pause');
-            $('#carousel3').carousel('cycle');
+          $('#carousel1').carousel('pause');
+          $('#carousel2').carousel('pause');
+          $('#carousel3').carousel('cycle');
         };
         //$(("#" + clickedFolder.attr("data-folder"))).toggleClass("folder-animate");
 }
@@ -45,9 +43,26 @@ function loadCarouselData () {
   carouselRequest.open('GET', './carouselinfo.xml');
   carouselRequest.onload = function() {
     var carouselData = JSON.parse(carouselRequest.responseText);
-    alert(carouselData[0].carouselTitle);
+    writeCarouselData(carouselData);
+
   };
   carouselRequest.send();
+
+}
+
+function writeCarouselData (data) {
+  
+
+  for (i = 0; i < 4; i++) {
+    document.getElementById("carousel" + data[i].folderNumber + "Title").insertAdjacentHTML('beforeend', data[i].carouselTitle);
+    $('#folder' + data[i].folderNumber + "Item1").attr('src', data[i].folderItem1);
+    $('#folder' + data[i].folderNumber + "Item2").attr('src', data[i].folderItem2);
+    $('#folder' + data[i].folderNumber + "Item3").attr('src', data[i].folderItem3);
+    $('#folder' + data[i].folderNumber + "Item4").attr('src', data[i].folderItem4);
+
+   
+
+  }
 
 }
 
@@ -62,9 +77,13 @@ $('document').ready( function () {
     var folderTab1 = document.getElementById("folderBtn1");
     var folderTab2 = document.getElementById("folderBtn2");
     var folderTab3 = document.getElementById("folderBtn3");
+    
+    //global variables
     var docWidth = $(document).width();
 
-//initialize carousels to be in paused state, except active carousel
+    // writeCarouselData reference pointer
+
+//initialize carousels to be in paused state, except active carousel (based on document width)
  $('#carousel1').carousel('pause'); 
  $('#carousel2').carousel('pause');
  if (docWidth > 996) {
@@ -75,7 +94,7 @@ $('document').ready( function () {
 
 
     
-  // picture centering 
+  // picture centering for computer graphic
     var target1 = document.getElementById("pictureContainer");
     var target2 = document.getElementById("textContainer"); 
   

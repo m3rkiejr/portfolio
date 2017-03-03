@@ -1,7 +1,7 @@
 [
     {
         "folderNumber": 1,
-        "carouselTitle": "Merk's Place Photography",
+        "carouselTitle": "Merk's Place Photography ",
         "folderItem1": "./guion1.jpg",
         "folderItem2": "./guion2.jpg",
         "folderItem3": "./guion3.jpg",
@@ -9,26 +9,26 @@
     },
     {
         "folderNumber": 2,
-        "carouselTitle": "Coming soon!",
-        "folderItem1": "./guion1.jpg",
+        "carouselTitle": "Coming soon! ",
+        "folderItem1": "./guion1a.jpg",
         "folderItem2": "./guion2.jpg",
         "folderItem3": "./guion3.jpg",
         "folderItem4": "./guion4.jpg"             
     },
     {
         "folderNumber": 3,
-        "carouselTitle": "Guion Bluford- American Pioneer",
-        "folderItem1": "./guion1.jpg",
-        "folderItem2": "./guion2.jpg",
+        "carouselTitle": "Guion Bluford Tribute Page ",
+        "folderItem1": "./guion1a.jpg",
+        "folderItem2": "./guion2a.jpg",
         "folderItem3": "./guion3.jpg",
         "folderItem4": "./guion4.jpg"             
     },
     {
         "folderNumber": 4,
-        "carouselTitle": "Merk's Place Photography",
-        "folderItem1": "./guion1.jpg",
-        "folderItem2": "./guion2.jpg",
-        "folderItem3": "./guion3.jpg",
+        "carouselTitle": "Merk's Place Photography ",
+        "folderItem1": "./guion1a.jpg",
+        "folderItem2": "./guiona2.jpg",
+        "folderItem3": "./guiona3.jpg",
         "folderItem4": "./guion4.jpg"             
     }
 ]
