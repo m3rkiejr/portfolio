@@ -1,0 +1,34 @@
+[
+    {
+        "folderNumber": 1,
+        "carouselTitle": "Merk's Place Photography",
+        "folderItem1": "./guion1.jpg",
+        "folderItem2": "./guion2.jpg",
+        "folderItem3": "./guion3.jpg",
+        "folderItem4": "./guion4.jpg"       
+    },
+    {
+        "folderNumber": 2,
+        "carouselTitle": "Coming soon!",
+        "folderItem1": "./guion1.jpg",
+        "folderItem2": "./guion2.jpg",
+        "folderItem3": "./guion3.jpg",
+        "folderItem4": "./guion4.jpg"             
+    },
+    {
+        "folderNumber": 3,
+        "carouselTitle": "Guion Bluford- American Pioneer",
+        "folderItem1": "./guion1.jpg",
+        "folderItem2": "./guion2.jpg",
+        "folderItem3": "./guion3.jpg",
+        "folderItem4": "./guion4.jpg"             
+    },
+    {
+        "folderNumber": 4,
+        "carouselTitle": "Merk's Place Photography",
+        "folderItem1": "./guion1.jpg",
+        "folderItem2": "./guion2.jpg",
+        "folderItem3": "./guion3.jpg",
+        "folderItem4": "./guion4.jpg"             
+    }
+]

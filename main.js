@@ -40,6 +40,16 @@ function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, fol
         //$(("#" + clickedFolder.attr("data-folder"))).toggleClass("folder-animate");
 }
 
+function loadCarouselData () {
+  var carouselRequest = new XMLHttpRequest();
+  carouselRequest.open('GET', './carouselinfo.xml');
+  carouselRequest.onload = function() {
+    var carouselData = JSON.parse(carouselRequest.responseText);
+    alert(carouselData[0].carouselTitle);
+  };
+  carouselRequest.send();
+
+}
 
 $('document').ready( function () {
 
@@ -98,6 +108,7 @@ $(".navbarOption").click(function(){
         };
 });
 
+loadCarouselData();
 
 
 
