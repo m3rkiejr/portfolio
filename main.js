@@ -55,6 +55,7 @@ function writeCarouselData (data) {
 
   for (i = 0; i < 4; i++) {
     document.getElementById("carousel" + data[i].folderNumber + "Title").insertAdjacentHTML('beforeend', data[i].carouselTitle);
+ 
     $('#folder' + data[i].folderNumber + "Item1").attr('src', data[i].folderItem1);
     $('#folder' + data[i].folderNumber + "Item2").attr('src', data[i].folderItem2);
     $('#folder' + data[i].folderNumber + "Item3").attr('src', data[i].folderItem3);

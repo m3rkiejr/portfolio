@@ -2,15 +2,15 @@
     {
         "folderNumber": 1,
         "carouselTitle": "Merk's Place Photography ",
-        "folderItem1": "./guion1.jpg",
-        "folderItem2": "./guion2.jpg",
-        "folderItem3": "./guion3.jpg",
-        "folderItem4": "./guion4.jpg"       
+        "folderItem1": "./salmon.jpg",
+        "folderItem2": "./pasta.jpg",
+        "folderItem3": "./hotrb.jpg",
+        "folderItem4": "./tacos.jpg"       
     },
     {
         "folderNumber": 2,
         "carouselTitle": "Coming soon! ",
-        "folderItem1": "./guion1a.jpg",
+        "folderItem1": "./guion1.jpg",
         "folderItem2": "./guion2.jpg",
         "folderItem3": "./guion3.jpg",
         "folderItem4": "./guion4.jpg"             
@@ -18,17 +18,17 @@
     {
         "folderNumber": 3,
         "carouselTitle": "Guion Bluford Tribute Page ",
-        "folderItem1": "./guion1a.jpg",
-        "folderItem2": "./guion2a.jpg",
+        "folderItem1": "./guion1.jpg",
+        "folderItem2": "./guion2.jpg",
         "folderItem3": "./guion3.jpg",
         "folderItem4": "./guion4.jpg"             
     },
     {
         "folderNumber": 4,
         "carouselTitle": "Merk's Place Photography ",
-        "folderItem1": "./guion1a.jpg",
-        "folderItem2": "./guiona2.jpg",
-        "folderItem3": "./guiona3.jpg",
-        "folderItem4": "./guion4.jpg"             
+        "folderItem1": "./guion1.jpg",
+        "folderItem2": "./tacos.jpg",
+        "folderItem3": "./guion3.jpg",
+        "folderItem4": "./salmon.jpg"             
     }
 ]
