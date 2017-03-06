@@ -110,13 +110,12 @@ hr {
 
 .singleFolder {
     display: block;
-    background: cadetblue;
-    height: 80vw;
+    background: linear-gradient(to right, rgba(0, 0, 150, .15) , rgba(0, 0, 50, .1));
+    height: auto;
     width: 100%;
     box-shadow: 8px 8px 5px #778878;
     border-radius: 10px;
-    padding: 5px;
-    padding-top:5px;
+    padding: 10px;
     
 
 }
@@ -168,7 +167,7 @@ hr {
 }
 .carousel-single-style {
 
-    height: 490px;
+    height: auto;
     width: 95%;
 
 }
