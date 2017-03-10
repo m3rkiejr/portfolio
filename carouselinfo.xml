@@ -5,7 +5,8 @@
         "folderItem1": "./salmon.jpg",
         "folderItem2": "./pasta.jpg",
         "folderItem3": "./hotrb.jpg",
-        "folderItem4": "./tacos.jpg"       
+        "folderItem4": "./tacos.jpg",
+        "siteLink": "https://www.facebook.com/merksplace"
     },
     {
         "folderNumber": 2,
@@ -13,7 +14,8 @@
         "folderItem1": "./guion1.jpg",
         "folderItem2": "./guion2.jpg",
         "folderItem3": "./guion3.jpg",
-        "folderItem4": "./guion4.jpg"             
+        "folderItem4": "./guion4.jpg",
+        "siteLink": "http://www.example.com/whatever"
     },
     {
         "folderNumber": 3,
@@ -21,7 +23,8 @@
         "folderItem1": "./guion1.jpg",
         "folderItem2": "./guion2.jpg",
         "folderItem3": "./guion3.jpg",
-        "folderItem4": "./guion4.jpg"             
+        "folderItem4": "./guion4.jpg",
+        "siteLink": "http://codepen.io/magicm3rk/full/vgWKLv/"             
     },
     {
         "folderNumber": 4,
@@ -29,6 +32,7 @@
         "folderItem1": "./guion1.jpg",
         "folderItem2": "./tacos.jpg",
         "folderItem3": "./guion3.jpg",
-        "folderItem4": "./salmon.jpg"             
+        "folderItem4": "./salmon.jpg",
+        "siteLink": "http://www.example.com/whatever"
     }
 ]

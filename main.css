@@ -99,7 +99,7 @@ hr {
 .folder1, .folder2, .folder3 {
     display: block;
     height: 650px;
-    width: 100%;
+    width: 98%;
     box-shadow: 8px 8px 5px #778878;
     border-radius: 10px;
     padding: 20px;

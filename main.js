@@ -60,8 +60,7 @@ function writeCarouselData (data) {
     $('#folder' + data[i].folderNumber + "Item2").attr('src', data[i].folderItem2);
     $('#folder' + data[i].folderNumber + "Item3").attr('src', data[i].folderItem3);
     $('#folder' + data[i].folderNumber + "Item4").attr('src', data[i].folderItem4);
-
-   
+    $('#folder' + data[i].folderNumber + "SiteLink").attr('href', data[i].siteLink);   
 
   }
 
