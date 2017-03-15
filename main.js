@@ -6,6 +6,7 @@ function  adjustPicturePadding (target1, target2) {   //target 1 is colum  with 
 }
   // end centering function
 
+  // to change folders
 function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, folderTab2, folderTab3){
         if (clickedFolder.attr("data-folder") == "folder1Id") {
 
@@ -35,12 +36,12 @@ function changeFolder (clickedFolder, folder1, folder2, folder3, folderTab1, fol
           $('#carousel2').carousel('pause');
           $('#carousel3').carousel('cycle');
         };
-        //$(("#" + clickedFolder.attr("data-folder"))).toggleClass("folder-animate");
+        
 }
-
+  // to load carousel info from .JSON file
 function loadCarouselData () {
   var carouselRequest = new XMLHttpRequest();
-  carouselRequest.open('GET', './carouselinfo.xml');
+  carouselRequest.open('GET', './carouselinfo.JSON');
   carouselRequest.onload = function() {
     var carouselData = JSON.parse(carouselRequest.responseText);
     writeCarouselData(carouselData);
@@ -65,6 +66,9 @@ function writeCarouselData (data) {
   }
 
 }
+
+
+// main start here!
 
 $('document').ready( function () {
 
