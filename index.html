@@ -2,10 +2,10 @@
 <html lang="en">
 
 
-    <!-- site summary -- 
+    <!-- document summary
     Author: D Merkle - m3rk.write@gmail.com - Feel Free to contact me if you have any questions or suggestions. I'm Currently in the process of learning/re-learning
                                              so feedback is welcomed! thanks!'
-    
+    -- Beginning of structure --
     Navigation bar- 
                 -menu items
                 -modal window
@@ -13,7 +13,7 @@
     About me section-
             
     Profile section-  3 folders overlaid for large screens, 1 single folder for small screens
-                    Note: All folders use JS to set attribs and Titles from carouselinfo.JSON, use this file to change pic urls and update content.
+                    Note: All folders use JS to set img src, href links, and heading titles from carouselinfo.JSON, use this file to change pic urls and update content.
                 -Folder 1  (Contains 4 picture carousel)
                 -Folder Tab 1  (Contains Link to page and title info)
 
@@ -24,10 +24,12 @@
                 -Folder Tab 3 (Contains Link to page and title info)
                 
                 -or- 
-                -Single Folder (Contains 4 picture carousel)
+                -Single Folder (Contains 4 picture carousel, no links)
 
     Contact section-
                 - Contains Links to social media pages, and an email transform
+    -- end of structure --
+
     -->
 
 <head>
@@ -167,11 +169,11 @@
         <div class="row">
             
             <div class="col-sm-4">
-                <img class="padded img-responsive" id="pictureContainer" src="comp.jpg" alt="computer with dinner platter and html tags">    
+                <img class="padded img-responsive" id="pictureContainer" height="907" width="627" src="comp.jpg" alt="computer with dinner platter and html tags">    
             </div>
 
             <div class="col-sm-8" id="textContainer">
-                <!-- personal story, to be hidden with javascript with Personal Background Tag, to be toggled back and forth -->
+                
 
                 <p class="styled-text h3">Accomplished Restaurateur moving towards a career in foodservice-structured software and web 
                     development.  Looking to merge front &amp; back of house experience with front &amp; back end solutions.
@@ -300,7 +302,7 @@
                             </div>
                            </div>
 
-                                carosel in here
+                               
                         </div>
                         <div class="folderTab2" id="folderBtn2" data-folder="folder2Id">
                             <p style="text-align: center; margin-top: 7px">
@@ -403,6 +405,10 @@
             <h2 class="styled-text">&lt;Contact /&gt;</h2>
             <hr>
 
+            <h3 class="styled-text"> Feel free to check out my social media pages or contact me at 
+                <a href="mailto:m3rk.write@gmail.com" target="_top">m3rk.write@gmail.com</a>
+            </h3>
+            </h2> Thanks for checking me out! </h2>
             <p class="h1">
             <a href="https://www.facebook.com/dennis.merklej" target="_blank">
                     <i class="fa fa-facebook-square" style="color: #3B5998 !important" aria-hidden="true"></i></a>&nbsp
